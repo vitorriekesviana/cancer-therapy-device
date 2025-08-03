@@ -23,71 +23,130 @@
 </head>
 <body class="antialiased">
 
-    <!-- Header -->
-    <header class="bg-gray-800/50 shadow-md">
+    <header class="bg-gray-800/50 shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4">
-            <a href="https://vitorriekesviana.github.io" class="text-lg font-semibold hover:text-blue-400 transition-colors duration-300">&larr; Voltar para o Portfólio Principal</a>
+            <a href="https://vitorriekesviana.github.io" class="text-lg font-semibold hover:text-blue-400 transition-colors duration-300">&larr; Back to Main Portfolio</a>
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="py-16">
         <div class="container mx-auto px-6">
 
-            <!-- Project Title -->
             <section class="text-center">
                 <h1 class="text-4xl md:text-6xl font-bold leading-tight">Wearable Cancer Therapy Device</h1>
-                <p class="text-xl mt-2 brand-gradient">Um Dispositivo Macrofluídico para Imunoterapia Localizada</p>
+                <p class="text-xl mt-2 brand-gradient">A Macrofluidic Device for Localized Immunotherapy</p>
+            </section>
+            
+            <section class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#link_to_your_final_report" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 hover:scale-105 text-center">
+                    View Final Report
+                </a>
+                <a href="#link_to_your_youtube_video" target="_blank" class="border-2 border-gray-600 hover:bg-gray-700 hover:border-gray-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 text-center">
+                    Watch Video Demo
+                </a>
             </section>
 
-            <!-- Project Image -->
             <section class="my-12">
                 <div class="max-w-4xl mx-auto bg-gray-800 rounded-lg overflow-hidden shadow-2xl">
                     <img src="full_device.jpg" alt="Image of the Wearable Cancer Therapy Device" class="w-full h-auto object-cover">
                 </div>
             </section>
 
-            <!-- Project Details -->
-            <section class="max-w-4xl mx-auto">
-                <!-- Overview -->
+            <section class="max-w-5xl mx-auto">
                 <div>
-                    <h2 class="text-3xl font-bold mb-4">Visão Geral do Projeto</h2>
+                    <h2 class="text-3xl font-bold mb-4">Project Overview</h2>
                     <p class="text-lg text-gray-300 leading-relaxed">
-                        Este foi meu projeto de conclusão de curso (capstone), onde liderei a engenharia de um dispositivo vestível e macrofluídico projetado para melhorar a eficácia da imunoterapia contra o câncer. O dispositivo permite a cultura e a administração controlada de células T diretamente no local do tumor, abordando os desafios da baixa retenção de células e dos efeitos terapêuticos de curta duração observados nas terapias intravenosas tradicionais.
+                        This was my capstone project, where I led the engineering of a wearable, macrofluidic device designed to enhance the efficacy of cancer immunotherapy. The device allows for the controlled culture and delivery of T-cells directly to the tumor site, addressing the challenges of low cell retention and short-lived therapeutic effects seen in traditional intravenous therapies.
                     </p>
                 </div>
 
-                <!-- Key Features -->
-                <div class="mt-12">
-                    <h2 class="text-3xl font-bold mb-4">Principais Funcionalidades</h2>
-                    <ul class="list-disc list-inside space-y-2 text-lg text-gray-300">
-                        <li><strong>Administração Localizada:</strong> O chip macrofluídico permite a administração precisa e contínua de células T no local do tumor.</li>
-                        <li><strong>Controle Wi-Fi:</strong> Um PCB personalizado com um microcontrolador ESP32 permite o controle sem fio das bombas e dos cronogramas de tratamento através de um aplicativo Android.</li>
-                        <li><strong>Design Vestível:</strong> O invólucro, projetado em SOLIDWORKS e impresso em 3D, garante que o dispositivo seja portátil e possa ser usado confortavelmente no braço do paciente.</li>
-                        <li><strong>Monitoramento de Viabilidade Celular:</strong> O sistema foi projetado para manter a viabilidade das células por pelo menos três dias, com regulação de O2 e calor.</li>
-                    </ul>
+                <div class="mt-16">
+                    <h2 class="text-3xl font-bold mb-8 text-center">Project Breakdown</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        
+                        <div class="bg-gray-800/50 p-6 rounded-lg flex items-start gap-4 transition-all hover:bg-gray-800/70">
+                            <div class="flex-shrink-0 text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2 1M4 7l2-1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" /></svg></div>
+                            <div>
+                                <h3 class="text-xl font-bold">Macrofluidic Chip Design & Simulation</h3>
+                                <p class="text-gray-400 mt-1">Designed the chip in SOLIDWORKS for T-cell culture and simulated fluid dynamics to ensure optimal delivery.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-800/50 p-6 rounded-lg flex items-start gap-4 transition-all hover:bg-gray-800/70">
+                             <div class="flex-shrink-0 text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M9 6h6M9 18h6M9 6l6 12M9 18L15 6" /></svg></div>
+                            <div>
+                                <h3 class="text-xl font-bold">Electronics & Custom PCB</h3>
+                                <p class="text-gray-400 mt-1">Developed a breadboard circuit and subsequently a custom PCB to control the device's entire electronic system.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-800/50 p-6 rounded-lg flex items-start gap-4 transition-all hover:bg-gray-800/70">
+                            <div class="flex-shrink-0 text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg></div>
+                            <div>
+                                <h3 class="text-xl font-bold">App Development & Wi-Fi Communication</h3>
+                                <p class="text-gray-400 mt-1">Created an Android app for remote management and programmed the microcontroller (C++) for Wi-Fi communication.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-800/50 p-6 rounded-lg flex items-start gap-4 transition-all hover:bg-gray-800/70">
+                             <div class="flex-shrink-0 text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" /></svg></div>
+                            <div>
+                                <h3 class="text-xl font-bold">MATLAB Modeling & Regression Analysis</h3>
+                                <p class="text-gray-400 mt-1">Used MATLAB to model cell growth and optimize treatment schedules. Calibrated the pump system with regression analysis.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Technologies Used -->
-                <div class="mt-12">
-                    <h2 class="text-3xl font-bold mb-4">Tecnologias Utilizadas</h2>
-                    <div class="flex flex-wrap gap-4">
+                <div class="mt-16">
+                    <h2 class="text-3xl font-bold mb-8 text-center">Project Gallery</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div>
+                            <img src="your_image_name_here.jpg" alt="Chip with red dye" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                            <p class="text-center text-sm mt-2 text-gray-500">Macrofluidic chip with dye for flow visualization.</p>
+                        </div>
+                        <div>
+                            <img src="your_image_name_here.jpg" alt="LCD Screen" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                            <p class="text-center text-sm mt-2 text-gray-500">LCD screen displaying real-time status updates.</p>
+                        </div>
+                        <div>
+                            <img src="your_image_name_here.jpg" alt="Statistical analysis and cell viability" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                            <p class="text-center text-sm mt-2 text-gray-500">Cell viability analysis and statistical results.</p>
+                        </div>
+                        <div>
+                            <img src="your_image_name_here.jpg" alt="Android application screenshot" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                            <p class="text-center text-sm mt-2 text-gray-500">Android app for remote device control.</p>
+                        </div>
+                        <div>
+                            <img src="your_image_name_here.jpg" alt="3D printed device chassis" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                            <p class="text-center text-sm mt-2 text-gray-500">3D-printed chassis to secure the device to the arm.</p>
+                        </div>
+                        <div>
+                            <img src="your_image_name_here.jpg" alt="3D model of the device in SOLIDWORKS" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                            <p class="text-center text-sm mt-2 text-gray-500">3D modeling of the enclosure in SOLIDWORKS.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                    <h2 class="text-3xl font-bold mb-4 text-center">Technologies Used</h2>
+                    <div class="flex flex-wrap gap-4 justify-center">
                         <span class="bg-blue-900/50 text-blue-300 text-sm font-semibold px-3 py-1 rounded-full">SOLIDWORKS</span>
                         <span class="bg-purple-900/50 text-purple-300 text-sm font-semibold px-3 py-1 rounded-full">C++</span>
-                        <span class="bg-teal-900/50 text-teal-300 text-sm font-semibold px-3 py-1 rounded-full">Microcontroladores (ESP32)</span>
+                        <span class="bg-teal-900/50 text-teal-300 text-sm font-semibold px-3 py-1 rounded-full">Microcontrollers (ESP32)</span>
                         <span class="bg-indigo-900/50 text-indigo-300 text-sm font-semibold px-3 py-1 rounded-full">MATLAB</span>
-                        <span class="bg-red-900/50 text-red-300 text-sm font-semibold px-3 py-1 rounded-full">Fabricação de PCB</span>
-                        <span class="bg-green-900/50 text-green-300 text-sm font-semibold px-3 py-1 rounded-full">Impressão 3D</span>
+                        <span class="bg-red-900/50 text-red-300 text-sm font-semibold px-3 py-1 rounded-full">PCB Design</span>
+                        <span class="bg-green-900/50 text-green-300 text-sm font-semibold px-3 py-1 rounded-full">3D Printing</span>
+                        <span class="bg-yellow-900/50 text-yellow-300 text-sm font-semibold px-3 py-1 rounded-full">Statistical Analysis</span>
                     </div>
                 </div>
             </section>
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="py-6 mt-12 border-t border-gray-800">
         <div class="container mx-auto px-6 text-center text-gray-500">
-            <p>&copy; 2024 Vitor Riekes Viana. Todos os Direitos Reservados.</p>
+            <p>&copy; 2024 Vitor Riekes Viana. All Rights Reserved.</p>
         </div>
     </footer>
 
